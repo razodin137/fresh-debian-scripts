@@ -25,6 +25,5 @@ Setup scripts for a fresh Debian Testing (Unstable/Sid) environment.
 git clone https://github.com/razodin137/fresh-debian-scripts-local-development.git
 cd fresh-debian-scripts-local-development
 sudo ./01_setup_debian_testing.sh
-sudo ./02_setup_repos.sh
-sudo ./03_install_packages.sh
+sudo ./02_git_plus_antigrav.sh
 ```
