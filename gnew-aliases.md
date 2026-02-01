@@ -10,6 +10,14 @@ create a new repo and push it straight to Github via the gh command line tool (i
 
 ---
 
+# gconnect
+
+gconnect is for those times when you've started work on something, and you want to add it to a repo you already made. 
+
+The "gconnect" command will sync your current directory with an existing repo.
+
+Simply run the command, search the name of your repo, and automatically sync the changes in the current directory. 
+
 ```bash
 # Create a new public GitHub repository with the name of the current directory, initializing git first
 gnew() {
