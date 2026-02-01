@@ -21,12 +21,20 @@ Shopping list has some helpful utilities that you'll probably need when setting 
 
 
 ### 3. nano ~/.bashrc [gnew-aliases](./gnew-aliases.md) 
-Copy-paste those gnew-alises to get some nice commands for Github creation.
+
+
+Copy-paste those gnew-alises to get some nice commands for Github creation..
+
+### 4. Disable [Middle Click](./disable_middle_click.sh) (Only run if on a laptop) on a l
+
+
+Linux laptops have a rough time with middle click. Getting rid of it is preferrable. 
 
 ## How to use
 ```bash
 git clone https://github.com/razodin137/fresh-debian-scripts-local-development.git
 cd fresh-debian-scripts-local-development
 sudo ./01_setup_debian_testing.sh
-sudo ./02_git_plus_antigrav.sh
+sudo ./02_git_plus_antigrav.sh.
+sudo .disable_middle_click.sh (ONLY RUN ON LAPTOPS)
 ```
