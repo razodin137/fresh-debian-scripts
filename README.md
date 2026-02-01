@@ -11,7 +11,7 @@ Setup scripts for a fresh Debian Testing (Unstable/Sid) environment.
 - Configuration for Debian Unstable/Testing.
 - Updates `sources.list`.
 
-##### Check your Shopping List
+##### Check [Shopping List](./shopping-list.md)
 
 Shopping list has some helpful utilities that you'll probably need when setting the rest of this up. 
 
@@ -20,7 +20,7 @@ Shopping list has some helpful utilities that you'll probably need when setting 
 - Adds **Antigravity** and **GitHub CLI** repositories.
 
 
-### 3. nano ~/.bashrc
+### 3. nano ~/.bashrc [gnew-aliases](./gnew-aliases.md) 
 Copy-paste those gnew-alises to get some nice commands for Github creation.
 
 ## How to use
