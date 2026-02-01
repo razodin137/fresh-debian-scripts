@@ -21,10 +21,15 @@ Shopping list has some helpful utilities that you'll probably need when setting 
 - and **GitHub CLI** repositories.
 - Installs **Dropbox** (Headless CLI).
 
-### 3. nano ~/.bashrc [gnew-aliases](./gnew-aliases.md) 
+### 3. [Setup Aliases](./setup_aliases.sh)
+Easily add the `gnew`, `gnew-p`, and `gconnect` aliases to your `.bashrc`.
 
+Run the script:
+```bash
+./setup_aliases.sh
+```
 
-Copy-paste those gnew-alises to get some nice commands for Github creation..
+**Alternatively**, you can manually copy-paste the aliases from [gnew-aliases.md](./gnew-aliases.md) into your `~/.bashrc`.
 
 ### 4. Disable [Middle Click](./disable_middle_click.sh) (Recommended for Laptops)
 Linux laptops often have issues with accidental middle clicks. This script disables middle-click emulation and the 3-finger middle click.
