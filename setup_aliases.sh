@@ -9,8 +9,8 @@ gnew() {
     git init && \
     git branch -M master && \
     git add . && \
-    git commit -m "Initial commit" && \
     gh repo create "$(basename "$PWD")" --public --source=. --remote=origin && \
+    (git commit -m "Initial commit" || echo "Nothing to commit") && \
     git push -u origin master
 }
 
@@ -19,8 +19,8 @@ gnew-p() {
     git init && \
     git branch -M master && \
     git add . && \
-    git commit -m "Initial commit" && \
     gh repo create "$(basename "$PWD")" --private --source=. --remote=origin && \
+    (git commit -m "Initial commit" || echo "Nothing to commit") && \
     git push -u origin master
 }
 
