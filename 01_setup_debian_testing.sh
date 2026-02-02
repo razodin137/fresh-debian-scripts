@@ -2,14 +2,7 @@
 set -e
 
 # 01_setup_debian_testing.sh
-# Check for root
-if [[ $EUID -ne 0 ]]; then
-   echo "Error: This script must be run as root (use sudo)"
-   exit 1
-fi
-
-echo "--- 1. Setting up Debian Unstable (Sid) ---"
-
+# 01_setup_debian_testing.sh
 # 1. Backup existing sources
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 
