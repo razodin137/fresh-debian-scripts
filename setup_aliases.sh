@@ -27,7 +27,8 @@ gnew-p() {
 # Link current directory to an existing GitHub repo and sync
 gconnect() {
     # 1. Fetch your repos and select one using fzf
-    local selected_repo=$(gh repo list --limit 1000 --json nameWithOwner --template "{{range .}}{{ .nameWithOwner }}{{"\n"}}{{end}}" | fzf --height 40% --layout=reverse --border --prompt="Select repo to link: ")
+    # FIX: Used --jq '.[].nameWithOwner' to avoid quote escaping issues
+    local selected_repo=$(gh repo list --limit 1000 --json nameWithOwner --jq '.[].nameWithOwner' | fzf --height 40% --layout=reverse --border --prompt="Select repo to link: ")
 
     if [ -z "$selected_repo" ]; then
         echo "No repo selected."
