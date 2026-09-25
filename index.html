@@ -1,7 +1,81 @@
 <!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><title>Coming soon</title></head>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+fresh-debian-scripts</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    max-width: 46rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.65;
+  }
+  a { color: #0969da; }
+  @media (prefers-color-scheme: dark) { a { color: #4493f8; } }
+  pre {
+    background: #f6f8fa; border-radius: 6px; padding: 1rem;
+    overflow-x: auto; font-size: 0.875rem;
+  }
+  @media (prefers-color-scheme: dark) { pre { background: #151b23; } }
+  code { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
+  table { border-collapse: collapse; }
+  th, td { border: 1px solid #d0d7de; padding: 0.375rem 0.75rem; }
+  th { background: #f6f8fa; }
+  @media (prefers-color-scheme: dark) { th, td { border-color: #3d444d; } th { background: #151b23; } }
+  h1, h2 { border-bottom: 1px solid #d0d7de; padding-bottom: 0.3em; }
+  @media (prefers-color-scheme: dark) { h1, h2 { border-color: #3d444d; } }
+</style>
+</head>
 <body>
-<h1>This page does not have an index.html set up yet!</h1>
+<h1>Fresh Debian Scripts</h1>
+<p>Setup scripts for a fresh Debian Testing (Unstable/Sid) environment.</p>
+<p><strong>Repository:</strong> <a href="https://github.com/razodin137/fresh-debian-scripts">razodin137/fresh-debian-scripts</a></p>
+<h2>Scripts</h2>
+<h3>1. <a href="./01_setup_debian_testing.sh">01_setup_debian_testing.sh</a></h3>
+<ul>
+<li>Configuration for Debian Unstable/Testing.</li>
+<li>Updates <code>sources.list</code>.</li>
+</ul>
+<p>Check the <a href="./shopping-list.md">shopping list</a> for helpful utilities you&#39;ll probably need when setting the rest of this up.</p>
+<h3>2. <a href="./antigravity-repos.sh">Antigravity Repositories</a></h3>
+<ul>
+<li>Installs basic prerequisites (<code>curl</code>, <code>git</code>, <code>gpg</code>, <code>wget</code>).</li>
+<li>Adds the <strong>Antigravity</strong> repository.</li>
+</ul>
+<h3>3. <a href="./gh-install.sh">GitHub CLI</a></h3>
+<ul>
+<li>Installs <strong>GitHub CLI</strong> (<code>gh</code>) and its repository.</li>
+</ul>
+<h3>4. <a href="./drobox_install.sh">Dropbox</a></h3>
+<ul>
+<li>Installs <strong>Dropbox</strong> Headless CLI.</li>
+</ul>
+<h3>5. <a href="./setup_aliases.sh">Setup Aliases</a></h3>
+<p>Easily add the <code>gnew</code>, <code>gnew-p</code>, and <code>gconnect</code> aliases to your <code>.bashrc</code>.</p>
+<p>Run the script:</p>
+<pre><code class="language-bash">./setup_aliases.sh
+</code></pre>
+<p><strong>Alternatively</strong>, you can manually copy-paste the aliases from <a href="./gnew-aliases.md">gnew-aliases.md</a> into your <code>~/.bashrc</code>.</p>
+<h3>6. <a href="./disable_middle_click.sh">Disable Middle Click</a> (Recommended for Laptops)</h3>
+<p>Linux laptops often have issues with accidental middle clicks. This script disables middle-click emulation and the 3-finger middle click.</p>
+<h2>How to use</h2>
+<pre><code class="language-bash">git clone https://github.com/razodin137/fresh-debian-scripts.git
+cd fresh-debian-scripts
+./01_setup_debian_testing.sh
+./antigravity-repos.sh
+./gh-install.sh
+./drobox_install.sh
+./disable_middle_click.sh   # ONLY RUN ON LAPTOPS
+</code></pre>
+<h2>Other notes</h2>
+<ul>
+<li><a href="./stuff-to-include.md">stuff-to-include.md</a> — misc items to fold into future scripts.</li>
+<li><a href="./shopping-list.md">shopping-list.md</a> — utility shopping list for a fresh install.</li>
+</ul>
+
 </body>
 </html>
